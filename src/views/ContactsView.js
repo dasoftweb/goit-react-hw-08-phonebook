@@ -3,6 +3,7 @@ import { connect } from 'react-redux';
 import contactsOperations from '../redux/contacts/contacts-operations';
 import contactsSelectors from '../redux/contacts/contacts-selectors';
 // Components
+import Loader from '../components/Loader';
 import ContactForm from '../components/Contacts/ContactForm/ContactForm';
 import ContactList from '../components/Contacts/ContactList/ContactList';
 import Filter from '../components/Contacts/Filter/Filter';
@@ -19,7 +20,7 @@ class ContactsView extends Component {
         <ContactForm />
         <h2 className="phonebook_title">Contacts</h2>
         <Filter />
-        {this.props.isLoadingContacts && <h1>Loading</h1>}
+        {this.props.isLoadingContacts && <Loader />}
         <ContactList />
       </div>
     );
