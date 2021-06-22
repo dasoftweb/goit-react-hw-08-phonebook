@@ -45,7 +45,7 @@ class ContactForm extends Component {
   render() {
     const { name, number } = this.state; 
     return (
-      <form onSubmit={this.handleSubmit}>
+      <form onSubmit={this.handleSubmit} className="form form-wide">
         <label className="label">
           Name
           <input

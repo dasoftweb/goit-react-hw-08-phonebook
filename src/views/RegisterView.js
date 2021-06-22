@@ -24,7 +24,7 @@ class RegisterView extends Component {
   render() {
     const { name, email, password } = this.state;
     return (
-      <form onSubmit={this.handleSubmit}>
+      <form onSubmit={this.handleSubmit} className="form">
         <label className="label">
           Name
           <input

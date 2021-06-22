@@ -35,22 +35,35 @@ body {
   color: #303030;
   padding: 5px;
   cursor: pointer;
+  width: 100%;
+}
+
+.form {
+  padding: 10px;
+  margin: 0 auto;
+  max-width: 400px;
 }
 
 .label, .input {
-  // display: block;
+  display: block;
   margin-bottom: 15px;
 }
 
-.label {
-  max-width: 30%;
-}
-
 .input {
+  width: 100%;
   height: 40px;
   border: 2px solid #c4c4c4;
+  text-align: center;
 }
 
 .name {
   width: 33.3%;
+}
+
+.button-small {
+  max-width: 100px;
+}
+
+.form-wide {
+  max-width: 100%;
 }
