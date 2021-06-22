@@ -8,7 +8,7 @@ import PrivateRoute from './components/PrivateRoute';
 import PublicRoute from './components/PublicRoute';
 // Components
 import Container from './components/Container';
-import AppBar from './components/AppBar';
+import AppBar from './components/AppBar/AppBar';
 // Views
 const HomeView = lazy(() =>
   import('./views/HomeView' /* webpackChunkName: "Home" */),

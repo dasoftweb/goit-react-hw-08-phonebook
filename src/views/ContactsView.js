@@ -15,10 +15,9 @@ class ContactsView extends Component {
 
   render() {
     return (
-      <div className="phonebook">
-        <h1 className="phonebook_title">Phonebook</h1>
+      <div className="Contacts">
         <ContactForm />
-        <h2 className="phonebook_title">Contacts</h2>
+        <h2 className="Contacts_title">Contacts</h2>
         <Filter />
         {this.props.isLoadingContacts && <Loader />}
         <ContactList />

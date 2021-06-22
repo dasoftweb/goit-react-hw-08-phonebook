@@ -1,0 +1,18 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 50px;
+  background-color: #cb2400;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.link {
+  color: #f2f2f2;
+  text-decoration: none;
+  font-weight: 700;
+  padding: 15px;
+  height: 50px;
+  text-transform: uppercase;
+}

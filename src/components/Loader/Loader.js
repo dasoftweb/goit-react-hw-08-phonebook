@@ -1,10 +1,10 @@
 import Loader from 'react-loader-spinner';
-import './Loader.module.css';
+import styles from './Loader.module.css';
 
 const loader = () => {
     return (
       <Loader
-        className="Loader"
+        className={styles.Loader}
         type="Oval"
         color="#CB2400"
         height={100}

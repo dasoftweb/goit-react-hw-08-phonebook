@@ -1,0 +1,12 @@
+.link {
+    color: #f2f2f2;
+    text-decoration: none;
+    font-weight: 700;
+    padding: 15px;
+    height: 50px;
+    text-transform: uppercase;
+}
+
+.activeLink {
+    background-color: #333;
+}

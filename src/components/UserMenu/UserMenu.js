@@ -2,26 +2,13 @@ import React from 'react';
 import { connect } from 'react-redux';
 import { authSelectors, authOperations } from '../../redux/auth';
 import defaultAvatar from './default-avatar.svg';
-
-const styles = {
-  container: {
-    display: 'flex',
-    alignItems: 'center',
-  },
-  avatar: {
-    marginRight: 10,
-  },
-  name: {
-    fontWeight: 700,
-    marginRight: 10,
-  },
-};
+import styles from './UserMenu.module.css';
 
 const UserMenu = ({ avatar, name, onLogout }) => (
-  <div style={styles.container}>
-    <img src={avatar} alt="" width="32" style={styles.avatar} />
-    <span style={styles.name}>Welcome, {name}</span>
-    <button type="button" onClick={onLogout}>
+  <div className={styles.container}>
+    <img src={avatar} alt="" width="32" className={styles.avatar} />
+    <span className={styles.name}>Welcome, {name}</span>
+    <button className={styles.button} type="button" onClick={onLogout}>
       Logout
     </button>
   </div>
